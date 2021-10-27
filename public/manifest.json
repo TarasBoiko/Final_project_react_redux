@@ -1,0 +1,6 @@
+{
+  "short_name": "Book App",
+  "name": "Create Books App",
+  "start_url": ".",
+  "display": "standalone"
+}
