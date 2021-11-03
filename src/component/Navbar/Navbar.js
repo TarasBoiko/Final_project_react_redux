@@ -9,8 +9,21 @@ import {
   NavItem,
   NavLinks,
 } from '../Navbar/Navbar.styled.js';
+import DropDownMenu from './DropdownMenu/DropDownMenu.js';
 
 class Navbar extends React.Component {
+  state = {
+    showContactMenu: false,
+  };
+
+  handleHover = () => {
+    this.setState({ showContactMenu: true });
+  };
+
+  handleLeave = () => {
+    this.setState({ showContactMenu: false });
+  };
+
   render() {
     return (
       <Fragment>
@@ -24,8 +37,11 @@ class Navbar extends React.Component {
               <NavItem>
                 <NavLinks to="/">Home</NavLinks>
               </NavItem>
-              <NavItem>
-                <NavLinks to="/contacts">Contacts</NavLinks>
+              <NavItem onMouseLeave={this.handleLeave}>
+                <NavLinks onMouseEnter={this.handleHover} to="/contacts">
+                  Contacts
+                </NavLinks>
+                {this.state.showContactMenu && <DropDownMenu />}
               </NavItem>
               <NavItem>
                 <NavLinks to="/books">Books</NavLinks>

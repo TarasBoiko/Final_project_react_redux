@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
-import { Container } from '../../globalStyles';
+import { ContentBox } from '../../globalStyles';
 
 class Home extends React.Component {
   render() {
     return (
       <Fragment>
-        <Container>
+        <ContentBox>
           <h1>Home</h1>
-        </Container>
+        </ContentBox>
       </Fragment>
     );
   }

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { FaBookDead } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { Container } from '../../globalStyles';
+// import { Container } from '../../globalStyles';
 
 export const Nav = styled.nav`
   background: #101522;
@@ -15,11 +15,21 @@ export const Nav = styled.nav`
   z-index: 999;
 `;
 
-export const NavbarContainer = styled(Container)`
+export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 80px;
-  ${Container}
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  @media screen and (max-width: 991px) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 `;
 
 export const NavLogo = styled(Link)`
@@ -30,6 +40,7 @@ export const NavLogo = styled(Link)`
   font-size: 2rem;
   display: flex;
   align-items: center;
+  border: 20px;
 `;
 
 export const NavIcon = styled(FaBookDead)`
