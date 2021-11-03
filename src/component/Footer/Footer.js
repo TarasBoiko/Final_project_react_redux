@@ -31,9 +31,9 @@ function Footer() {
           </FooterLinkItems>
           <FooterLinkItems>
             <FooterLink to="/contacts">Contacts</FooterLink>
-            <FooterLink to="/author">Author</FooterLink>
-            <FooterLink to="/director">Director</FooterLink>
-            <FooterLink to="/developer">Developer</FooterLink>
+            <FooterLink to="/contacts/1">Author</FooterLink>
+            <FooterLink to="/contacts/2">Director</FooterLink>
+            <FooterLink to="/contacts/3">Developer</FooterLink>
           </FooterLinkItems>
         </FooterLinksWrapper>
         <FooterLinksWrapper>
