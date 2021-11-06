@@ -3,7 +3,6 @@ import React from 'react';
 import { Button, FormGroup, Input, Col, UncontrolledAlert } from 'reactstrap';
 import { Form, Field } from 'react-final-form';
 import { FormFeedBack } from './Feedbaack.styled';
-import { ContentBox } from '../../globalStyles';
 
 const onSubmit = (values) => {
   console.log(values);

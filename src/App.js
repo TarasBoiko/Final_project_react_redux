@@ -9,6 +9,7 @@ import Footer from './component/Footer/Footer';
 import ContactsAuthor from './pages/Contacts/ContactsDetail/Author/Author';
 import ContactsDirector from './pages/Contacts/ContactsDetail/Director/Director';
 import ContactsDeveloper from './pages/Contacts/ContactsDetail/Developer/Developer';
+import BooksDetail from './pages/Books/components/BookDetails/bookDetails';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/books" component={Books} exact />
+        <Route path="/books/:id" component={BooksDetail} />
         <Route path="/contacts" component={Contacts} exact />
         <Route path="/contacts/1" component={ContactsAuthor}></Route>
         <Route path="/contacts/2" component={ContactsDirector}></Route>
